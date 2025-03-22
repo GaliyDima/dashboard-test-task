@@ -1,0 +1,67 @@
+.app-layout {
+  min-height: 100vh;
+  
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    
+    .logo {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .header-right {
+      display: flex;
+      align-items: center;
+      
+      .user-welcome {
+        color: white;
+        margin-right: 16px;
+        
+        @media (max-width: 576px) {
+          display: none;
+        }
+      }
+      
+      .logout-button {
+        color: white;
+        
+        &:hover {
+          color: #1890ff;
+        }
+        
+        @media (max-width: 576px) {
+          .anticon {
+            margin-right: 0;
+          }
+          
+          span:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  
+  .app-menu {
+    line-height: 46px;
+  }
+  
+  .app-content {
+    padding: 0;
+    background-color: #f0f2f5;
+    flex: 1;
+  }
+  
+  .app-footer {
+    text-align: center;
+    background-color: #001529;
+    color: rgba(255, 255, 255, 0.65);
+  }
+} 
